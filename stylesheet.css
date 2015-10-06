@@ -2,22 +2,4 @@ body {
 	background-color: #b7d1c4
 }
 
-img {
-	height: 170px;
-	width: 170px;
-	box-shadow: rgba(0,0,0,0.2) 10px 10px;
-
-	#navbar {
-	position: fixed;
-	top:10px;
-	left:50%;
-	margin-left:-254px;
-}
-
-#header {
-	position: relative;
-	top: -10px;
-	background-color: #3c4543;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-}
+/*I'm a comment!*/
