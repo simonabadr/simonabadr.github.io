@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="chartist-js-master/dist/chartist.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  <style type="text/css"></style></head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="fatal.html">Fatal Attraction</a></li>
+                <li><a href="cosmetics.html">Cosmetics & Chemicals</a></li>
+                <li class="active"><a href="#">Facts</a></li>
+                <li><a href="harmful.html">Harmful Ingredients</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+ 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Facts</h2>
+          <p>For many, a commitment to health sounds more like a commitment to a life of paranoia and deprivation. The most common argument I hear is that it isn’t “healthy” to spend a life in fear of every product that is out there. For those with a busy lifestyle, it sure may seem overwhelming to think of adding more things to watch out for on top of our existing concerns. While I understand this perspective, I am writing this article to make it simpler for you. Remove the words paranoia, deprivation and concern from your vocabulary, and replace them with “Being Informed”.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2>Chart</h2>
+          <div class="ct-chart"></div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- OVDE SE NAMESTENI EDNO DO DRUGO  -->
+<!-- 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Facts</h2>
+          <p>For many, a commitment to health sounds more like a commitment to a life of paranoia and deprivation. The most common argument I hear is that it isn’t “healthy” to spend a life in fear of every product that is out there. For those with a busy lifestyle, it sure may seem overwhelming to think of adding more things to watch out for on top of our existing concerns. While I understand this perspective, I am writing this article to make it simpler for you. Remove the words paranoia, deprivation and concern from your vocabulary, and replace them with “Being Informed”.</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Chart</h2>
+          <div class="ct-chart"></div>
+        </div>
+      </div> -->
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="chartist-js-master/dist/chartist.min.js"></script>
+  
+<script>
+    $(document).ready(function() {
+      new Chartist.Bar('.ct-chart', {
+      labels: ['Shampo', 'Body Lotion', 'DEO', 'Parfume', 'Fake TAN', 'FIUNDATION', 'LIPSTIK'],
+      series: [11, 32, 15, 250, 22, 24, 33]
+      }, {
+      distributeSeries: true
+    });
+    });
+    </script>
+<script type="text/javascript">(function () {
+        return window.SIG_EXT = {};
+      })()</script>
+
+      </body></html>
